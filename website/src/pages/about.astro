@@ -1,0 +1,21 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import ContactCta from '../components/ContactCta.astro';
+import content from '../data/content.json';
+---
+
+<SiteLayout title={content.pages.about.metaTitle} description={content.pages.about.metaDescription}>
+	<main id="main">
+		<section class="page-heading page-width">
+			<p class="eyebrow">{content.pages.about.eyebrow}</p>
+			<h1>{content.pages.about.title}</h1>
+			<p class="intro">{content.pages.about.intro}</p>
+		</section>
+		<section class="content-section page-width" aria-labelledby="story-title">
+			<h2 id="story-title">{content.pages.about.sectionTitle}</h2>
+			<p>{content.pages.about.sectionDescription}</p>
+			<p class="placeholder-notice">{content.pages.about.portraitPlaceholder}</p>
+		</section>
+		<ContactCta />
+	</main>
+</SiteLayout>

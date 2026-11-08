@@ -1,0 +1,92 @@
+{
+  "site": {
+    "brandName": "Melissa Blazer Photography",
+    "logoSrc": "/images/logo.jpeg",
+    "logoAlt": "Melissa Blazer Photography",
+    "skipLink": "Skip to content",
+    "homeLabel": "home"
+  },
+  "navigation": {
+    "label": "Main navigation",
+    "links": [
+      { "href": "/", "label": "Home" },
+      { "href": "/services/", "label": "Services" },
+      { "href": "/about/", "label": "About" },
+      { "href": "/contact/", "label": "Contact" }
+    ],
+    "contactLabel": "Let’s talk"
+  },
+  "footer": {
+    "description": "Melissa Blazer Photography",
+    "contactLabel": "Contact"
+  },
+  "contactCta": {
+    "eyebrow": "Start a conversation",
+    "title": "Have something in mind?",
+    "buttonLabel": "Get in touch"
+  },
+  "pages": {
+    "home": {
+      "metaTitle": "Lifestyle Photography | Capturing Beautiful Moments",
+      "metaDescription": "A photography business website starter. Add your photography, services, and story to make it your own.",
+      "hero": {
+        "eyebrow": "Lifestyle Photography · Melissa Blazer Photography",
+        "title": "Capturing Life's Beautiful Moments.",
+        "intro": "Replace this introduction with a short, personal description of your photography and the people you work with.",
+        "servicesLink": "Explore services",
+        "contactLink": "Get in touch",
+        "imageLabel": "Photograph placeholder",
+        "imagePlaceholder": "Your photography goes here",
+        "imageIndex": "01 / 01"
+      },
+      "intro": {
+        "eyebrow": "A little about the work",
+        "title": "A thoughtful first impression starts with your real work.",
+        "description": "Use this space to share what makes your approach distinct. Keep it true to your experience, your process, and the kind of photography you actually offer.",
+        "linkLabel": "Meet the photographer"
+      },
+      "services": {
+        "eyebrow": "What I do",
+        "title": "Services",
+        "linkLabel": "View services",
+        "itemNumber": "01",
+        "itemTitle": "Add a photography service",
+        "itemDescription": "Replace with a service you offer and a concise description."
+      }
+    },
+    "services": {
+      "metaTitle": "Services | Business name goes here",
+      "metaDescription": "Explore photography services. Add your actual offerings, process, and relevant details before launch.",
+      "eyebrow": "Services",
+      "title": "Photography services",
+      "intro": "Add the photography services you provide and a short description of what clients can expect.",
+      "sectionTitle": "What I offer",
+      "sectionDescription": "Replace these placeholders with your confirmed services. No offerings have been assumed.",
+      "offerings": [
+        "Add a photography service",
+        "Add another service, if applicable",
+        "Add an optional third service"
+      ]
+    },
+    "about": {
+      "metaTitle": "About | Business name goes here",
+      "metaDescription": "Meet the photographer. Add a personal introduction and verified details about your experience and approach.",
+      "eyebrow": "About",
+      "title": "The person behind the camera",
+      "intro": "Add your name and a genuine introduction to your work and approach.",
+      "sectionTitle": "Your story goes here",
+      "sectionDescription": "Share what led you to photography, how you work with clients, and what they can expect from the experience. Include only details that reflect your real background.",
+      "portraitPlaceholder": "Photographer portrait placeholder — add an approved, real photograph and descriptive alt text."
+    },
+    "contact": {
+      "metaTitle": "Contact | Business name goes here",
+      "metaDescription": "Get in touch about photography services. Add a working business inquiry email address before launch.",
+      "eyebrow": "Contact",
+      "title": "Let’s talk about your project.",
+      "intro": "Add a brief invitation and any details that will help prospective clients get in touch.",
+      "sectionTitle": "Inquiries",
+      "sectionDescription": "Replace this notice with your business email address to enable email inquiries. No nonfunctional form or unverified contact details are included.",
+      "emailPlaceholder": "Business inquiry email address needed before launch."
+    }
+  }
+}

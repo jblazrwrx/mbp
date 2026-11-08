@@ -1,0 +1,25 @@
+---
+import content from '../data/content.json';
+
+const currentPath = Astro.url.pathname;
+---
+
+<header class="site-header">
+	<div class="header-inner page-width">
+		<a class="wordmark" href="/" aria-label={`${content.site.brandName}, ${content.site.homeLabel}`}>
+			<img class="wordmark-logo" src={content.site.logoSrc} alt={content.site.logoAlt} width="1000" height="502" />
+		</a>
+		<nav aria-label={content.navigation.label}>
+			<ul class="nav-links">
+				{content.navigation.links.map(({ href, label }) => (
+					<li>
+						<a href={href} aria-current={currentPath === href ? 'page' : undefined}>
+							{label}
+						</a>
+					</li>
+				))}
+			</ul>
+		</nav>
+		<a class="header-contact" href="/contact/">{content.navigation.contactLabel} <span aria-hidden="true">↗</span></a>
+	</div>
+</header>

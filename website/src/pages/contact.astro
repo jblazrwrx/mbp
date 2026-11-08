@@ -1,0 +1,19 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import content from '../data/content.json';
+---
+
+<SiteLayout title={content.pages.contact.metaTitle} description={content.pages.contact.metaDescription}>
+	<main id="main">
+		<section class="page-heading page-width">
+			<p class="eyebrow">{content.pages.contact.eyebrow}</p>
+			<h1>{content.pages.contact.title}</h1>
+			<p class="intro">{content.pages.contact.intro}</p>
+		</section>
+		<section class="content-section page-width" aria-labelledby="inquiry-title">
+			<h2 id="inquiry-title">{content.pages.contact.sectionTitle}</h2>
+			<p>{content.pages.contact.sectionDescription}</p>
+			<p class="placeholder-notice">{content.pages.contact.emailPlaceholder}</p>
+		</section>
+	</main>
+</SiteLayout>

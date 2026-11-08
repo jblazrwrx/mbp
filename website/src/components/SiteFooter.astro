@@ -1,0 +1,13 @@
+---
+import content from '../data/content.json';
+---
+
+<footer class="site-footer">
+	<div class="footer-inner page-width">
+		<a class="wordmark footer-wordmark" href="/" aria-label={`${content.site.brandName}, ${content.site.homeLabel}`}>
+			<img class="wordmark-logo" src={content.site.logoSrc} alt={content.site.logoAlt} width="1000" height="502" />
+		</a>
+		<p>{content.footer.description}</p>
+		<a class="text-link" href="/contact/">{content.footer.contactLabel} <span aria-hidden="true">↗</span></a>
+	</div>
+</footer>

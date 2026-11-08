@@ -1,0 +1,25 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import ContactCta from '../components/ContactCta.astro';
+import content from '../data/content.json';
+---
+
+<SiteLayout title={content.pages.services.metaTitle} description={content.pages.services.metaDescription}>
+	<main id="main">
+		<section class="page-heading page-width">
+			<p class="eyebrow">{content.pages.services.eyebrow}</p>
+			<h1>{content.pages.services.title}</h1>
+			<p class="intro">{content.pages.services.intro}</p>
+		</section>
+		<section class="content-section page-width" aria-labelledby="offerings-title">
+			<h2 id="offerings-title">{content.pages.services.sectionTitle}</h2>
+			<p>{content.pages.services.sectionDescription}</p>
+			<ol class="placeholder-list">
+				{content.pages.services.offerings.map((offering, index) => (
+					<li><span>{String(index + 1).padStart(2, '0')}</span><strong>{offering}</strong></li>
+				))}
+			</ol>
+		</section>
+		<ContactCta />
+	</main>
+</SiteLayout>
