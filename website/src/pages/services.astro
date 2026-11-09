@@ -14,9 +14,15 @@ import content from '../data/content.json';
 		<section class="content-section page-width" aria-labelledby="offerings-title">
 			<h2 id="offerings-title">{content.pages.services.sectionTitle}</h2>
 			<p>{content.pages.services.sectionDescription}</p>
-			<ol class="placeholder-list">
-				{content.pages.services.offerings.map((offering, index) => (
-					<li><span>{String(index + 1).padStart(2, '0')}</span><strong>{offering}</strong></li>
+			<ol class="service-list">
+				{content.services.map((service, index) => (
+					<li class="service-item">
+						<span class="service-number">{String(index + 1).padStart(2, '0')}</span>
+						<div class="service-copy">
+							<h3>{service.name}</h3>
+							<p>{service.description}</p>
+						</div>
+					</li>
 				))}
 			</ol>
 		</section>

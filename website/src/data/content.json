@@ -6,6 +6,10 @@
     "skipLink": "Skip to content",
     "homeLabel": "home"
   },
+  "social_links": {
+    "instagram": "https://www.instagram.com/mbphoto_pgh/",
+    "instagram_label": "Instagram"
+  },
   "navigation": {
     "label": "Main navigation",
     "links": [
@@ -20,6 +24,28 @@
     "description": "Melissa Blazer Photography",
     "contactLabel": "Contact"
   },
+  "services": [
+    {
+      "name": "Newborns",
+      "shortDescription": "Celebrate the newest member of your family with a portrait session focused on your growing bond.",
+      "description": "Welcome your newest family member with photographs that preserve this special chapter. Newborn sessions can focus on the little details, quiet connections, and the people who are already part of baby's world."
+    },
+    {
+      "name": "Seniors",
+      "shortDescription": "Mark a milestone with portraits that reflect your personality and the next chapter ahead.",
+      "description": "Celebrate everything that makes this milestone yours with a senior portrait session shaped around your personality. From relaxed portraits to meaningful personal details, the images can tell the story of who you are and where you're headed."
+    },
+    {
+      "name": "Family",
+      "shortDescription": "Make room for the real connections, shared laughter, and little moments that make your family yours.",
+      "description": "Family portraits are a chance to pause and enjoy being together. A session can bring everyone into the frame while leaving room for natural interactions, genuine expressions, and the connections that make your family unique."
+    },
+    {
+      "name": "Headshots",
+      "shortDescription": "Create a polished, approachable portrait for the many places people meet you professionally.",
+      "description": "A headshot offers a clear, current introduction wherever your work takes you. Create a portrait that feels polished and approachable, and that represents you consistently across professional profiles, websites, and other materials."
+    }
+  ],
   "contactCta": {
     "eyebrow": "Start a conversation",
     "title": "Have something in mind?",
@@ -48,25 +74,17 @@
       "services": {
         "eyebrow": "What I do",
         "title": "Services",
-        "linkLabel": "View services",
-        "itemNumber": "01",
-        "itemTitle": "Add a photography service",
-        "itemDescription": "Replace with a service you offer and a concise description."
+        "linkLabel": "View services"
       }
     },
     "services": {
-      "metaTitle": "Services | Business name goes here",
-      "metaDescription": "Explore photography services. Add your actual offerings, process, and relevant details before launch.",
+      "metaTitle": "Photography Services | Melissa Blazer Photography",
+      "metaDescription": "Explore newborn, senior, family, and headshot photography services from Melissa Blazer Photography.",
       "eyebrow": "Services",
       "title": "Photography services",
-      "intro": "Add the photography services you provide and a short description of what clients can expect.",
+      "intro": "Explore photography services for newborns, seniors, families, and headshots.",
       "sectionTitle": "What I offer",
-      "sectionDescription": "Replace these placeholders with your confirmed services. No offerings have been assumed.",
-      "offerings": [
-        "Add a photography service",
-        "Add another service, if applicable",
-        "Add an optional third service"
-      ]
+      "sectionDescription": "Get in touch to ask about a session and find the right option for you."
     },
     "about": {
       "metaTitle": "About | Business name goes here",

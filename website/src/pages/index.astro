@@ -39,14 +39,18 @@ import content from '../data/content.json';
 				</div>
 				<a class="text-link" href="/services/">{content.pages.home.services.linkLabel} <span aria-hidden="true">↗</span></a>
 			</div>
-			<div class="service-placeholder">
-				<span class="service-number">{content.pages.home.services.itemNumber}</span>
-				<div>
-					<h3>{content.pages.home.services.itemTitle}</h3>
-					<p>{content.pages.home.services.itemDescription}</p>
-				</div>
-				<span class="service-arrow" aria-hidden="true">↗</span>
-			</div>
+			<ul class="service-list">
+				{content.services.map((service, index) => (
+					<li class="service-item">
+						<span class="service-number">{String(index + 1).padStart(2, '0')}</span>
+						<div class="service-copy">
+							<h3>{service.name}</h3>
+							<p>{service.shortDescription}</p>
+						</div>
+						<span class="service-arrow" aria-hidden="true">↗</span>
+					</li>
+				))}
+			</ul>
 		</section>
 
 		<ContactCta />

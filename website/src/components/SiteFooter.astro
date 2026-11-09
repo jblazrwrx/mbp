@@ -8,6 +8,17 @@ import content from '../data/content.json';
 			<img class="wordmark-logo" src={content.site.logoSrc} alt={content.site.logoAlt} width="1000" height="502" />
 		</a>
 		<p>{content.footer.description}</p>
-		<a class="text-link" href="/contact/">{content.footer.contactLabel} <span aria-hidden="true">↗</span></a>
+		<div class="footer-links">
+			<a class="text-link" href="/contact/">{content.footer.contactLabel} <span aria-hidden="true">↗</span></a>
+			<a
+				class="text-link"
+				href={content.social_links.instagram}
+				target="_blank"
+				rel="noopener noreferrer"
+			>
+				{content.social_links.instagram_label}
+				<span aria-hidden="true">↗</span>
+			</a>
+		</div>
 	</div>
 </footer>

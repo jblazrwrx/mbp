@@ -255,8 +255,7 @@ h1 {
 	line-height: 1.04;
 }
 
-.intro-section > div > p,
-.service-placeholder p {
+.intro-section > div > p {
 	max-width: 38rem;
 	color: var(--color-muted);
 	line-height: 1.7;
@@ -283,14 +282,23 @@ h1 {
 	margin-bottom: 0;
 }
 
-.service-placeholder {
+.service-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.service-item {
 	display: grid;
 	grid-template-columns: 5rem 1fr auto;
 	align-items: start;
 	gap: 1.5rem;
 	padding-block: 1.5rem;
-	border-top: 1px solid var(--color-line);
 	border-bottom: 1px solid var(--color-line);
+}
+
+.service-item:first-child {
+	border-top: 1px solid var(--color-line);
 }
 
 .service-number,
@@ -299,15 +307,18 @@ h1 {
 	font-size: 0.8rem;
 }
 
-.service-placeholder h3 {
-	margin-bottom: 0.5rem;
+.service-item h3 {
+	margin: 0 0 0.5rem;
 	font-family: Georgia, 'Times New Roman', serif;
 	font-size: 1.6rem;
 	font-weight: 400;
 }
 
-.service-placeholder p {
+.service-copy p {
+	max-width: 42rem;
 	margin-bottom: 0;
+	color: var(--color-muted);
+	line-height: 1.7;
 }
 
 .contact-cta {
@@ -365,27 +376,7 @@ h1 {
 	line-height: 1.8;
 }
 
-.placeholder-list {
-	margin: 2rem 0 0;
-	padding: 0;
-	border-top: 1px solid var(--color-line);
-	list-style: none;
-}
-
-.placeholder-list li {
-	display: grid;
-	grid-template-columns: 4rem 1fr;
-	gap: 1rem;
-	padding: 1.3rem 0;
-	border-bottom: 1px solid var(--color-line);
-}
-
-.placeholder-list span:first-child {
-	color: var(--color-muted);
-	font-size: 0.78rem;
-}
-
-.placeholder-list strong {
+.service-item strong {
 	font-family: Georgia, 'Times New Roman', serif;
 	font-size: 1.25rem;
 	font-weight: 400;
@@ -418,6 +409,12 @@ h1 {
 	color: var(--color-muted);
 	font-size: 0.78rem;
 	line-height: 1.6;
+}
+
+.footer-links {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1.5rem;
 }
 
 .footer-wordmark .wordmark-logo {
@@ -503,7 +500,7 @@ h1 {
 		gap: 1rem;
 	}
 
-	.service-placeholder {
+	.service-item {
 		grid-template-columns: 2rem 1fr auto;
 		gap: 0.75rem;
 	}
