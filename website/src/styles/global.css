@@ -109,8 +109,8 @@ a:focus-visible {
 	border-bottom: 1px solid var(--color-ink);
 }
 
-.header-contact span,
-.text-link span {
+.header-contact .arrow-icon,
+.text-link .arrow-icon {
 	margin-left: 0.3rem;
 }
 
@@ -301,10 +301,18 @@ h1 {
 	border-top: 1px solid var(--color-line);
 }
 
-.service-number,
-.service-arrow {
+.service-number {
 	color: var(--color-muted);
 	font-size: 0.8rem;
+}
+
+.arrow-icon,
+.service-arrow {
+	display: inline-block;
+	width: 0.75rem;
+	height: 0.75rem;
+	background: url('/images/link-arrow.png') center / contain no-repeat;
+	vertical-align: middle;
 }
 
 .service-item h3 {
