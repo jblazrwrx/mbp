@@ -61,9 +61,8 @@
         "intro": "Replace this introduction with a short, personal description of your photography and the people you work with.",
         "servicesLink": "Explore services",
         "contactLink": "Get in touch",
-        "imageLabel": "Photograph placeholder",
-        "imagePlaceholder": "Your photography goes here",
-        "imageIndex": "01 / 01"
+        "imageFile": "MBP_6553.jpg",
+        "imageAlt": "A toddler in a denim jacket and floral dress plays with a wooden toy tea set on a blanket in a flower garden."
       },
       "intro": {
         "eyebrow": "A little about the work",

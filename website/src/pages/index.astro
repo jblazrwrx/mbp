@@ -1,7 +1,12 @@
 ---
 import SiteLayout from '../layouts/SiteLayout.astro';
 import ContactCta from '../components/ContactCta.astro';
+import { Picture } from 'astro:assets';
 import content from '../data/content.json';
+
+const images = import.meta.glob<{ default: ImageMetadata }>('../assets/*.{jpg,jpeg,png}', { eager: true });
+const heroImage = images[`../assets/${content.pages.home.hero.imageFile}`]?.default;
+if (!heroImage) throw new Error(`Hero image not found in src/assets: ${content.pages.home.hero.imageFile}`);
 ---
 
 <SiteLayout title={content.pages.home.metaTitle} description={content.pages.home.metaDescription}>
@@ -16,10 +21,16 @@ import content from '../data/content.json';
 					<a class="text-link" href="/contact/">{content.pages.home.hero.contactLink} <span class="arrow-icon" aria-hidden="true"></span></a>
 				</div>
 			</div>
-			<div class="image-placeholder hero-image" aria-label={content.pages.home.hero.imageLabel}>
-				<span class="placeholder-label">{content.pages.home.hero.imagePlaceholder}</span>
-				<span class="placeholder-index">{content.pages.home.hero.imageIndex}</span>
-			</div>
+			<Picture
+				class="hero-image"
+				src={heroImage}
+				alt={content.pages.home.hero.imageAlt}
+				formats={['avif', 'webp']}
+				widths={[480, 800, 1200, 1600]}
+				sizes="(max-width: 760px) 100vw, 55vw"
+				loading="eager"
+				fetchpriority="high"
+			/>
 		</section>
 
 		<section class="intro-section page-width" aria-labelledby="intro-title">
