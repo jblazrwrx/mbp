@@ -58,7 +58,7 @@
       "hero": {
         "eyebrow": "Lifestyle Photography · Melissa Blazer Photography",
         "title": "Capturing Life's Beautiful Moments.",
-        "intro": "Replace this introduction with a short, personal description of your photography and the people you work with.",
+        "intro": "I'm Melissa, a photographer who loves helping people capture the moments, milestones, and connections that make life special. Whether we're celebrating a new arrival, marking a milestone, or bringing the family together, my goal is to create photographs you'll enjoy looking back on for years to come.",
         "servicesLink": "Explore services",
         "contactLink": "Get in touch",
         "imageFile": "MBP_6553.jpg",
@@ -66,13 +66,13 @@
       },
       "intro": {
         "eyebrow": "A little about the work",
-        "title": "A thoughtful first impression starts with your real work.",
-        "description": "Use this space to share what makes your approach distinct. Keep it true to your experience, your process, and the kind of photography you actually offer.",
+        "title": "More than a photograph..",
+        "description": "My primary focus is to photograph portraits of people in an imaginative manner. Capturing situations, real-life events, milestones and the art of the everyday.",
         "linkLabel": "Meet the photographer"
       },
       "services": {
         "eyebrow": "What I do",
-        "title": "Services",
+        "title": "My favorite photoshoots.",
         "linkLabel": "View services"
       }
     },
@@ -80,9 +80,9 @@
       "metaTitle": "Photography Services | Melissa Blazer Photography",
       "metaDescription": "Explore newborn, senior, family, and headshot photography services from Melissa Blazer Photography.",
       "eyebrow": "Services",
-      "title": "Photography services",
-      "intro": "Explore photography services for newborns, seniors, families, and headshots.",
-      "sectionTitle": "What I offer",
+      "title": "Photography for life's milestones and everyday connections.",
+      "intro": "From newborn and family photography to senior portraits and professional headshots, I offer sessions designed around the people and moments being photographed.",
+      "sectionTitle": "Find the right session",
       "sectionDescription": "Get in touch to ask about a session and find the right option for you."
     },
     "about": {
@@ -99,9 +99,9 @@
       "metaTitle": "Contact | Business name goes here",
       "metaDescription": "Get in touch about photography services. Add a working business inquiry email address before launch.",
       "eyebrow": "Contact",
-      "title": "Let’s talk about your project.",
+      "title": "I'd love to hear from you.",
       "intro": "Add a brief invitation and any details that will help prospective clients get in touch.",
-      "sectionTitle": "Inquiries",
+      "sectionTitle": "Get in touch.",
       "sectionDescription": "Replace this notice with your business email address to enable email inquiries. No nonfunctional form or unverified contact details are included.",
       "emailPlaceholder": "Business inquiry email address needed before launch."
     }
