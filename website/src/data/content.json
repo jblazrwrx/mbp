@@ -13,10 +13,22 @@
   "navigation": {
     "label": "Main navigation",
     "links": [
-      { "href": "/", "label": "Home" },
-      { "href": "/services/", "label": "Services" },
-      { "href": "/about/", "label": "About" },
-      { "href": "/contact/", "label": "Contact" }
+      {
+        "href": "/",
+        "label": "Home"
+      },
+      {
+        "href": "/services/",
+        "label": "Services"
+      },
+      {
+        "href": "/about/",
+        "label": "About"
+      },
+      {
+        "href": "/contact/",
+        "label": "Contact"
+      }
     ],
     "contactLabel": "Let’s talk"
   },
@@ -97,13 +109,30 @@
     },
     "contact": {
       "metaTitle": "Contact | Business name goes here",
-      "metaDescription": "Get in touch about photography services. Add a working business inquiry email address before launch.",
+      "metaDescription": "Send an inquiry about newborn, senior, family, or headshot photography.",
       "eyebrow": "Contact",
       "title": "I'd love to hear from you.",
       "intro": "Add a brief invitation and any details that will help prospective clients get in touch.",
       "sectionTitle": "Get in touch.",
-      "sectionDescription": "Replace this notice with your business email address to enable email inquiries. No nonfunctional form or unverified contact details are included.",
-      "emailPlaceholder": "Business inquiry email address needed before launch."
+      "sectionDescription": "Share a few details below and I'll follow up by email.",
+      "form": {
+        "action": "https://formsubmit.co/mblazer591@gmail.com",
+        "subject": "New Photography Inquiry",
+        "nameLabel": "Name",
+        "namePlaceholder": "First and last name",
+        "emailLabel": "Email",
+        "emailPlaceholder": "you@example.com",
+        "serviceLegend": "What type of session are you interested in?",
+        "messageLabel": "Tell me more",
+        "messageHint": "Please share more details about what you have in mind and your approximate timeframe for scheduling a session.",
+        "messagePlaceholder": "Details and approximate timeframe",
+        "submitLabel": "Send Inquiry",
+        "ajaxAction": "https://formsubmit.co/ajax/mblazer591@gmail.com",
+        "sendingLabel": "Sending…",
+        "successTitle": "Thank you.",
+        "successMessage": "Your inquiry has been sent. I'll follow up by email soon.",
+        "errorMessage": "Something went wrong sending your inquiry. Please try again in a moment."
+      }
     }
   }
 }

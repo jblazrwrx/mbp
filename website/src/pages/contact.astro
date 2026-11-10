@@ -1,6 +1,8 @@
 ---
 import SiteLayout from '../layouts/SiteLayout.astro';
 import content from '../data/content.json';
+
+const form = content.pages.contact.form;
 ---
 
 <SiteLayout title={content.pages.contact.metaTitle} description={content.pages.contact.metaDescription}>
@@ -13,7 +15,77 @@ import content from '../data/content.json';
 		<section class="content-section page-width" aria-labelledby="inquiry-title">
 			<h2 id="inquiry-title">{content.pages.contact.sectionTitle}</h2>
 			<p>{content.pages.contact.sectionDescription}</p>
-			<p class="placeholder-notice">{content.pages.contact.emailPlaceholder}</p>
+			<form class="inquiry-form" action={form.action} method="POST" data-ajax-action={form.ajaxAction} data-sending-label={form.sendingLabel} data-error-message={form.errorMessage}>
+				<div class="field">
+					<label for="name">{form.nameLabel}</label>
+					<input type="text" id="name" name="name" placeholder={form.namePlaceholder} autocomplete="name" required />
+				</div>
+				<div class="field">
+					<label for="email">{form.emailLabel}</label>
+					<input type="email" id="email" name="email" placeholder={form.emailPlaceholder} autocomplete="email" required />
+				</div>
+				<fieldset class="field">
+					<legend>{form.serviceLegend}</legend>
+					<div class="radio-group">
+						{content.services.map((service, index) => (
+							<label class="radio-option">
+								<input type="radio" name="service" value={service.name} required={index === 0} />
+								<span>{service.name}</span>
+							</label>
+						))}
+					</div>
+				</fieldset>
+				<div class="field">
+					<label for="message">{form.messageLabel}</label>
+					<p class="field-hint" id="message-hint">{form.messageHint}</p>
+					<textarea id="message" name="message" rows="6" placeholder={form.messagePlaceholder} aria-describedby="message-hint" required></textarea>
+				</div>
+				<input type="hidden" name="_subject" value={form.subject} />
+				<input type="hidden" name="_template" value="table" />
+				<input type="text" name="_honey" tabindex="-1" autocomplete="off" style="display:none" />
+				<button type="submit" class="button button-dark">{form.submitLabel}</button>
+				<p class="form-error" role="alert" hidden></p>
+			</form>
+			<div class="form-success" role="status" tabindex="-1" hidden>
+				<h3>{form.successTitle}</h3>
+				<p>{form.successMessage}</p>
+			</div>
 		</section>
 	</main>
 </SiteLayout>
+
+<script>
+	const form = document.querySelector<HTMLFormElement>('.inquiry-form');
+	const success = document.querySelector<HTMLElement>('.form-success');
+	const error = form?.querySelector<HTMLElement>('.form-error');
+	const button = form?.querySelector<HTMLButtonElement>('button[type="submit"]');
+
+	form?.addEventListener('submit', async (event) => {
+		event.preventDefault();
+		if (!form.reportValidity() || !button || !error || !success) return;
+
+		const idleLabel = button.textContent;
+		button.disabled = true;
+		button.textContent = form.dataset.sendingLabel ?? '';
+		error.hidden = true;
+
+		try {
+			const response = await fetch(form.dataset.ajaxAction ?? form.action, {
+				method: 'POST',
+				headers: { Accept: 'application/json' },
+				body: new FormData(form),
+			});
+			const result = await response.json();
+			if (!response.ok || String(result.success) !== 'true') throw new Error();
+
+			form.hidden = true;
+			success.hidden = false;
+			success.focus();
+		} catch {
+			error.textContent = form.dataset.errorMessage ?? '';
+			error.hidden = false;
+			button.disabled = false;
+			button.textContent = idleLabel;
+		}
+	});
+</script>
