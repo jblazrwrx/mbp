@@ -1,0 +1,40 @@
+---
+import { Image } from 'astro:assets';
+
+interface Props {
+	image?: { file: string; alt: string };
+	size: 'thumb' | 'gallery';
+}
+
+const { image, size } = Astro.props;
+
+const assets = import.meta.glob<{ default: ImageMetadata }>('../assets/*.{jpg,jpeg,png}', { eager: true });
+const source = image?.file ? assets[`../assets/${image.file}`]?.default : undefined;
+
+if (image?.file && !source) {
+	throw new Error(`Service image "${image.file}" was not found in src/assets.`);
+}
+
+const options =
+	size === 'thumb'
+		? { widths: [160, 320], sizes: '(max-width: 760px) 5.5rem, 8rem' }
+		: { widths: [480, 800, 1200], sizes: '(max-width: 760px) 100vw, 30vw' };
+const largest = options.widths[options.widths.length - 1];
+---
+
+<div class={`service-media service-media-${size}`}>
+	{
+		source && (
+			<Image
+				src={source}
+				alt={size === 'thumb' ? '' : (image?.alt ?? '')}
+				width={largest}
+				height={Math.round((largest * 3) / 4)}
+				widths={options.widths}
+				sizes={options.sizes}
+				format="webp"
+				loading="lazy"
+			/>
+		)
+	}
+</div>

@@ -1,0 +1,19 @@
+---
+import ServiceImage from './ServiceImage.astro';
+
+interface Props {
+	images: { file: string; alt: string }[];
+}
+
+const { images } = Astro.props;
+---
+
+{
+	images.length > 0 && (
+		<div class={`service-gallery service-gallery-${Math.min(images.length, 3)}`}>
+			{images.slice(0, 3).map((image) => (
+				<ServiceImage image={image} size="gallery" />
+			))}
+		</div>
+	)
+}

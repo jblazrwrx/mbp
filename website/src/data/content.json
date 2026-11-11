@@ -30,32 +30,50 @@
         "label": "Contact"
       }
     ],
-    "contactLabel": "Let’s talk"
+    "contactLabel": "Let’s talk",
+    "menuLabel": "Menu"
   },
   "footer": {
     "description": "Melissa Blazer Photography",
-    "contactLabel": "Contact"
+    "contactLabel": "Contact",
+    "creditPrefix": "Website designed by",
+    "creditName": "j_blazr",
+    "creditEmail": "justin.blazer@blazerbrand.com"
   },
   "services": [
     {
       "name": "Newborns",
       "shortDescription": "Celebrate the newest member of your family with a portrait session focused on your growing bond.",
-      "description": "Welcome your newest family member with photographs that preserve this special chapter. Newborn sessions can focus on the little details, quiet connections, and the people who are already part of baby's world."
+      "description": "Welcome your newest family member with photographs that preserve this special chapter. Newborn sessions can focus on the little details, quiet connections, and the people who are already part of baby's world.",
+      "images": [
+        {
+          "file": "MBP_6964.jpg",
+          "alt": "A sleeping newborn between a soft elephant blanket and a sleeping black dog, in black and white."
+        }
+      ]
     },
     {
       "name": "Seniors",
       "shortDescription": "Mark a milestone with portraits that reflect your personality and the next chapter ahead.",
-      "description": "Celebrate everything that makes this milestone yours with a senior portrait session shaped around your personality. From relaxed portraits to meaningful personal details, the images can tell the story of who you are and where you're headed."
+      "description": "Celebrate everything that makes this milestone yours with a senior portrait session shaped around your personality. From relaxed portraits to meaningful personal details, the images can tell the story of who you are and where you're headed.",
+      "images": []
     },
     {
       "name": "Family",
       "shortDescription": "Make room for the real connections, shared laughter, and little moments that make your family yours.",
-      "description": "Family portraits are a chance to pause and enjoy being together. A session can bring everyone into the frame while leaving room for natural interactions, genuine expressions, and the connections that make your family unique."
+      "description": "Family portraits are a chance to pause and enjoy being together. A session can bring everyone into the frame while leaving room for natural interactions, genuine expressions, and the connections that make your family unique.",
+      "images": []
     },
     {
       "name": "Headshots",
       "shortDescription": "Create a polished, approachable portrait for the many places people meet you professionally.",
-      "description": "A headshot offers a clear, current introduction wherever your work takes you. Create a portrait that feels polished and approachable, and that represents you consistently across professional profiles, websites, and other materials."
+      "description": "A headshot offers a clear, current introduction wherever your work takes you. Create a portrait that feels polished and approachable, and that represents you consistently across professional profiles, websites, and other materials.",
+      "images": [
+        {
+          "file": "MBP_6160.jpg",
+          "alt": "Two smiling women seated in patterned armchairs in a bright living room."
+        }
+      ]
     }
   ],
   "contactCta": {

@@ -1,6 +1,7 @@
 ---
 import SiteLayout from '../layouts/SiteLayout.astro';
 import ContactCta from '../components/ContactCta.astro';
+import ServiceGallery from '../components/ServiceGallery.astro';
 import content from '../data/content.json';
 ---
 
@@ -14,18 +15,37 @@ import content from '../data/content.json';
 		<section class="content-section page-width" aria-labelledby="offerings-title">
 			<h2 id="offerings-title">{content.pages.services.sectionTitle}</h2>
 			<p>{content.pages.services.sectionDescription}</p>
-			<ol class="service-list">
-				{content.services.map((service, index) => (
-					<li class="service-item">
-						<span class="service-number">{String(index + 1).padStart(2, '0')}</span>
-						<div class="service-copy">
-							<h3>{service.name}</h3>
+			<div class="service-list">
+				{content.services.map((service) => (
+					<details class="service-item service-accordion" id={service.name.toLowerCase()} name="services">
+						<summary>
+							<span class="service-copy">
+								<h3>{service.name}</h3>
+								<p>{service.shortDescription}</p>
+							</span>
+							<span class="service-toggle" aria-hidden="true"></span>
+						</summary>
+						<div class="service-panel">
 							<p>{service.description}</p>
+							<ServiceGallery images={service.images} />
 						</div>
-					</li>
+					</details>
 				))}
-			</ol>
+			</div>
 		</section>
 		<ContactCta />
 	</main>
 </SiteLayout>
+
+<script>
+	const openFromHash = () => {
+		const target = document.getElementById(decodeURIComponent(location.hash.slice(1)));
+		if (target instanceof HTMLDetailsElement) {
+			target.open = true;
+			target.scrollIntoView({ block: 'start' });
+		}
+	};
+
+	openFromHash();
+	window.addEventListener('hashchange', openFromHash);
+</script>

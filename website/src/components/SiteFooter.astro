@@ -1,5 +1,7 @@
 ---
 import content from '../data/content.json';
+
+const year = new Date().getFullYear();
 ---
 
 <footer class="site-footer">
@@ -7,7 +9,6 @@ import content from '../data/content.json';
 		<a class="wordmark footer-wordmark" href="/" aria-label={`${content.site.brandName}, ${content.site.homeLabel}`}>
 			<img class="wordmark-logo" src={content.site.logoSrc} alt={content.site.logoAlt} width="1000" height="502" />
 		</a>
-		<p>{content.footer.description}</p>
 		<div class="footer-links">
 			<a class="text-link" href="/contact/">{content.footer.contactLabel} <span class="arrow-icon" aria-hidden="true"></span></a>
 			<a
@@ -19,6 +20,15 @@ import content from '../data/content.json';
 				{content.social_links.instagram_label}
 				<span class="arrow-icon" aria-hidden="true"></span>
 			</a>
+		</div>
+	</div>
+	<div class="footer-legal">
+		<div class="footer-legal-inner page-width">
+			<p>&copy; {year} {content.footer.description}</p>
+			<p>
+				{content.footer.creditPrefix}{' '}
+				<a href={`mailto:${content.footer.creditEmail}`}>{content.footer.creditName}</a>
+			</p>
 		</div>
 	</div>
 </footer>

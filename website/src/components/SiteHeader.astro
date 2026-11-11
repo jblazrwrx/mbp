@@ -4,12 +4,15 @@ import content from '../data/content.json';
 const currentPath = Astro.url.pathname;
 ---
 
-<header class="site-header">
+<header class="site-header" data-site-header>
 	<div class="header-inner page-width">
 		<a class="wordmark" href="/" aria-label={`${content.site.brandName}, ${content.site.homeLabel}`}>
 			<img class="wordmark-logo" src={content.site.logoSrc} alt={content.site.logoAlt} width="1000" height="502" />
 		</a>
-		<nav aria-label={content.navigation.label}>
+		<button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label={content.navigation.menuLabel}>
+			<span class="menu-bars" aria-hidden="true"></span>
+		</button>
+		<nav id="site-nav" class="site-nav" aria-label={content.navigation.label}>
 			<ul class="nav-links">
 				{content.navigation.links.map(({ href, label }) => (
 					<li>
@@ -23,3 +26,26 @@ const currentPath = Astro.url.pathname;
 		<a class="header-contact" href="/contact/">{content.navigation.contactLabel} <span class="arrow-icon" aria-hidden="true"></span></a>
 	</div>
 </header>
+
+<script>
+	const header = document.querySelector<HTMLElement>('[data-site-header]');
+	const toggle = header?.querySelector<HTMLButtonElement>('.menu-toggle');
+
+	if (header && toggle) {
+		header.dataset.navReady = '';
+
+		const setOpen = (open: boolean) => {
+			toggle.setAttribute('aria-expanded', String(open));
+			header.toggleAttribute('data-nav-open', open);
+		};
+
+		toggle.addEventListener('click', () => setOpen(toggle.getAttribute('aria-expanded') !== 'true'));
+		header.addEventListener('keydown', (event) => {
+			if (event.key === 'Escape' && toggle.getAttribute('aria-expanded') === 'true') {
+				setOpen(false);
+				toggle.focus();
+			}
+		});
+		window.matchMedia('(min-width: 761px)').addEventListener('change', () => setOpen(false));
+	}
+</script>
