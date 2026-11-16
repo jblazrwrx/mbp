@@ -74,6 +74,18 @@
           "alt": "Two smiling women seated in patterned armchairs in a bright living room."
         }
       ]
+    },
+    {
+      "name": "1st Birthday",
+      "shortDescription": "Celebrate your one year old with a memorable portrait session.",
+      "description": "Your little one turned one, and that's quite the accomplishment! Let's put together a fun scene you can share with family and friends.",
+      "images": []
+    },
+    {
+      "name": "Other",
+      "shortDescription": "Capture moments that don't fit into the other categories. I do not photograph weddings.",
+      "description": "If you have a unique photography request or a special occasion that doesn't fall under the standard categories, we can create a custom session tailored to your needs.",
+      "images": []
     }
   ],
   "contactCta": {
