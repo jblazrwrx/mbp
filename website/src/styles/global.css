@@ -690,9 +690,18 @@ h1 {
 	}
 
 	.footer-inner {
-		align-items: start;
-		flex-wrap: wrap;
+		flex-direction: column;
+		align-items: center;
 		padding-block: 2rem;
+	}
+
+	.footer-links {
+		justify-content: center;
+	}
+
+	.footer-legal-inner {
+		flex-direction: column;
+		text-align: center;
 	}
 
 }
@@ -703,9 +712,14 @@ h1 {
 	}
 
 	.button-row {
-		align-items: start;
-		flex-direction: column;
-		gap: 1.2rem;
+		gap: 0.5rem;
+	}
+
+	.button-row .button {
+		flex: 1 1 0;
+		min-width: 0;
+		padding-inline: 0.5rem;
+		text-align: center;
 	}
 
 	.section-heading {
