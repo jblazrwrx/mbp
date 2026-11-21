@@ -603,6 +603,10 @@ h1 {
 		padding-block: 4rem;
 	}
 
+	.hero > picture {
+		order: -1;
+	}
+
 	.intro-section {
 		grid-template-columns: 1fr;
 		gap: 0;

@@ -52,7 +52,7 @@ if (!heroImage) throw new Error(`Hero image not found in src/assets: ${content.p
 				<a class="text-link" href="/services/">{content.pages.home.services.linkLabel} <span class="arrow-icon" aria-hidden="true"></span></a>
 			</div>
 			<ul class="service-list">
-				{content.services.map((service) => (
+				{content.services.filter((service) => service.showOnHomepage !== false).map((service) => (
 					<li class="service-item">
 						<a class="service-link" href={`/services/#${service.name.toLowerCase()}`}>
 							<ServiceImage image={service.images[0]} size="thumb" />

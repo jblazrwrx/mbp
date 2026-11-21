@@ -11,7 +11,7 @@ const { images } = Astro.props;
 {
 	images.length > 0 && (
 		<div class={`service-gallery service-gallery-${Math.min(images.length, 3)}`}>
-			{images.slice(0, 3).map((image) => (
+			{images.map((image) => (
 				<ServiceImage image={image} size="gallery" />
 			))}
 		</div>
