@@ -237,6 +237,10 @@ p {
 	margin-top: 0;
 }
 
+main p {
+	white-space: pre-line;
+}
+
 h1,
 h2 {
 	font-family: Georgia, 'Times New Roman', serif;
