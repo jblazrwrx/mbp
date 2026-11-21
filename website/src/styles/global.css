@@ -52,7 +52,7 @@ a {
 }
 
 /* Thickens glyphs on hover without changing text width, so neighbors don't shift. */
-a:not(.wordmark, .nav-links a, .service-link):hover,
+a:not(.wordmark, .nav-links a, .service-link, .footer-gallery):hover,
 .button:hover {
 	text-shadow: 0 0 0.6px currentColor, 0 0 0.6px currentColor;
 }
@@ -530,6 +530,30 @@ h1 {
 
 .site-footer {
 	border-top: 1px solid var(--color-line);
+}
+
+.footer-gallery {
+	display: flex;
+	min-height: 4.5rem;
+	align-items: center;
+	justify-content: center;
+	gap: 0.6rem;
+	padding: 1.25rem var(--page-gutter);
+	background: #6b795e;
+	color: white;
+	font-weight: 400;
+	text-align: center;
+	text-decoration: none;
+	transition: opacity 160ms ease;
+}
+
+.footer-gallery:hover {
+	opacity: 0.85;
+}
+
+.footer-gallery:focus-visible {
+	outline-color: white;
+	outline-offset: -4px;
 }
 
 .footer-inner {

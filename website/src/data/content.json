@@ -38,6 +38,8 @@
   "footer": {
     "description": "Melissa Blazer Photography",
     "contactLabel": "Contact",
+    "galleryUrl": "https://melissablazerphotography.shootproof.com/",
+    "galleryLabel": "View my photography gallery",
     "creditPrefix": "Website designed by",
     "creditName": "j_blazr",
     "creditEmail": "justin.blazer@blazerbrand.com"

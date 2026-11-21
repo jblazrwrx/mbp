@@ -5,6 +5,10 @@ const year = new Date().getFullYear();
 ---
 
 <footer class="site-footer">
+	<a class="footer-gallery" href={content.footer.galleryUrl} target="_blank" rel="noopener noreferrer">
+		{content.footer.galleryLabel}
+		<span class="arrow-icon" aria-hidden="true"></span>
+	</a>
 	<div class="footer-inner page-width">
 		<a class="wordmark footer-wordmark" href="/" aria-label={`${content.site.brandName}, ${content.site.homeLabel}`}>
 			<img class="wordmark-logo" src={content.site.logoSrc} alt={content.site.logoAlt} width="1000" height="502" />
