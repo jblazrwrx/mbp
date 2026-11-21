@@ -44,25 +44,6 @@
   },
   "services": [
     {
-      "name": "Newborns",
-      "shortDescription": "Celebrate the newest member of your family with a portrait session focused on your growing bond.",
-      "description": "Welcome your newest family member with photographs that preserve this special chapter. Newborn sessions can focus on the little details, quiet connections, and the people who are already part of baby's world.",
-      "images": [
-        {
-          "file": "MBP_2798.jpg",
-          "alt": "A baby's feet cradled in adults' hands."
-        },
-        {
-          "file": "MBP_6964.jpg",
-          "alt": "A sleeping newborn between a soft elephant blanket and a sleeping black dog, in black and white."
-        },
-        {
-          "file": "MBP_4489.jpg",
-          "alt": "A young child kisses a baby resting in a basket among garden flowers."
-        }
-      ]
-    },
-    {
       "name": "Seniors",
       "shortDescription": "Mark a milestone with portraits that reflect your personality and the next chapter ahead.",
       "description": "Celebrate everything that makes this milestone yours with a senior portrait session shaped around your personality. From relaxed portraits to meaningful personal details, the images can tell the story of who you are and where you're headed.",
@@ -105,6 +86,40 @@
       ]
     },
     {
+      "name": "1st Birthday",
+      "shortDescription": "Celebrate your one year old with a memorable portrait session.",
+      "description": "Your little one turned one, and that's quite the accomplishment! Let's put together a fun scene you can share with family and friends.",
+      "images": [
+        {
+          "file": "MBP_5275.jpg",
+          "alt": "A child wearing a party hat reaches for a birthday cake topped with a number one candle."
+        },
+        {
+          "file": "MBP_2012.jpg",
+          "alt": "A child sitting outdoors behind a small birthday cake topped with a number one candle."
+        }
+      ]
+    },
+    {
+      "name": "Newborns",
+      "shortDescription": "Celebrate the newest member of your family with a portrait session focused on your growing bond.",
+      "description": "Welcome your newest family member with photographs that preserve this special chapter. Newborn sessions can focus on the little details, quiet connections, and the people who are already part of baby's world.",
+      "images": [
+        {
+          "file": "MBP_2798.jpg",
+          "alt": "A baby's feet cradled in adults' hands."
+        },
+        {
+          "file": "MBP_6964.jpg",
+          "alt": "A sleeping newborn between a soft elephant blanket and a sleeping black dog, in black and white."
+        },
+        {
+          "file": "MBP_4489.jpg",
+          "alt": "A young child kisses a baby resting in a basket among garden flowers."
+        }
+      ]
+    },
+    {
       "name": "Headshots",
       "shortDescription": "Create a polished, approachable portrait for the many places people meet you professionally.",
       "description": "A headshot offers a clear, current introduction wherever your work takes you. Create a portrait that feels polished and approachable, and that represents you consistently across professional profiles, websites, and other materials.",
@@ -120,21 +135,6 @@
         {
           "file": "MBP_8070.jpg",
           "alt": "A man in a dark suit and blue shirt standing outdoors."
-        }
-      ]
-    },
-    {
-      "name": "1st Birthday",
-      "shortDescription": "Celebrate your one year old with a memorable portrait session.",
-      "description": "Your little one turned one, and that's quite the accomplishment! Let's put together a fun scene you can share with family and friends.",
-      "images": [
-        {
-          "file": "MBP_2012.jpg",
-          "alt": "A child sitting outdoors behind a small birthday cake topped with a number one candle."
-        },
-        {
-          "file": "MBP_5275.jpg",
-          "alt": "A child wearing a party hat reaches for a birthday cake topped with a number one candle."
         }
       ]
     },

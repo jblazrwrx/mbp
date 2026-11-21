@@ -17,7 +17,7 @@ if (image?.file && !source) {
 
 const options =
 	size === 'thumb'
-		? { widths: [160, 320], sizes: '(max-width: 760px) 5.5rem, 8rem' }
+		? { widths: [160, 320, 480, 800, 1200], sizes: '(max-width: 760px) 90vw, 12rem' }
 		: { widths: [480, 800, 1200], sizes: '(max-width: 760px) 100vw, 30vw' };
 const largest = options.widths[options.widths.length - 1];
 ---
