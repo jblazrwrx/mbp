@@ -154,7 +154,7 @@
   "pages": {
     "home": {
       "metaTitle": "Lifestyle Photography | Capturing Beautiful Moments",
-      "metaDescription": "A photography business website starter. Add your photography, services, and story to make it your own.",
+      "metaDescription": "Melissa Blazer Photography captures family connections, milestones, newborns, senior portraits, and headshots to treasure for years to come.",
       "hero": {
         "eyebrow": "Lifestyle Photography · Melissa Blazer Photography",
         "title": "Capturing Life's Beautiful Moments.",
@@ -182,12 +182,14 @@
       "eyebrow": "Services",
       "title": "Photography for life's milestones and everyday connections.",
       "intro": "From newborn and family photography to senior portraits and professional headshots, I offer sessions designed around the people and moments being photographed.",
+      "imageFile": "MBP_7189.jpg",
+      "imageAlt": "Two children holding blue ice cream while seated on a red bench outdoors.",
       "sectionTitle": "Find the right session",
       "sectionDescription": "Get in touch to ask about a session and find the right option for you."
     },
     "about": {
-      "metaTitle": "About | Business name goes here",
-      "metaDescription": "Meet the photographer. Add a personal introduction and verified details about your experience and approach.",
+      "metaTitle": "About | Melissa Blazer Photography",
+      "metaDescription": "Meet Melissa Blazer and learn how photographing her own family inspired her to capture meaningful moments for others.",
       "eyebrow": "About",
       "title": "A Little About Me!",
       "intro": "I have always loved being behind the camera capturing the moments that matter most. My favorite part of photography is knowing that the images I create for you will be treasured not only today, but for years to come.\n\nMy goal is to give you more than just beautiful photos. I want you to be able to look back at them years from now and be transported right back to that moment—to remember the feelings, the laughter, the love, and all the little details that made that season of life so special.\n\nI have photographs of my own family that mean the world to me, and I know just how priceless those memories become with time.",
@@ -196,11 +198,11 @@
       "portraitPlaceholder": "Photographer portrait placeholder — add an approved, real photograph and descriptive alt text."
     },
     "contact": {
-      "metaTitle": "Contact | Business name goes here",
+      "metaTitle": "Contact | Melissa Blazer Photography",
       "metaDescription": "Send an inquiry about newborn, senior, family, or headshot photography.",
       "eyebrow": "Contact",
       "title": "I'd love to hear from you.",
-      "intro": "Add a brief invitation and any details that will help prospective clients get in touch.",
+      "intro": "Please fill out the form below with information about the session you're interested in.",
       "sectionTitle": "Get in touch.",
       "sectionDescription": "Share a few details below and I'll follow up by email.",
       "form": {
