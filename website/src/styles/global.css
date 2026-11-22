@@ -649,23 +649,22 @@ h1 {
 
 	.hero {
 		min-height: auto;
-		grid-template-columns: 1fr;
+		grid-template-columns: minmax(0, 1fr);
 		gap: 2.5rem;
-		padding-block: 4rem;
-	}
-
-	.hero > picture {
-		order: -1;
+		padding-block: 0 4rem;
 	}
 
 	.services-hero {
-		grid-template-columns: 1fr;
+		grid-template-columns: minmax(0, 1fr);
 		gap: 2.5rem;
-		padding-top: 4rem;
+		padding-top: 0;
 	}
 
+	.hero > picture,
 	.services-hero > picture {
 		order: -1;
+		width: calc(100% + 2 * var(--page-gutter));
+		margin-inline: calc(-1 * var(--page-gutter));
 	}
 
 	.service-link {
