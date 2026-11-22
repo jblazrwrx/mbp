@@ -8,7 +8,7 @@ interface Props {
 
 const { image, size } = Astro.props;
 
-const assets = import.meta.glob<{ default: ImageMetadata }>('../assets/*.{jpg,jpeg,png}', { eager: true });
+const assets = import.meta.glob<{ default: ImageMetadata }>('../assets/**/*.{jpg,jpeg,png}', { eager: true });
 const source = image?.file ? assets[`../assets/${image.file}`]?.default : undefined;
 
 if (image?.file && !source) {

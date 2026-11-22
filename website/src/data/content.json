@@ -51,19 +51,19 @@
       "description": "Celebrate everything that makes this milestone yours with a senior portrait session shaped around your personality. From relaxed portraits to meaningful personal details, the images can tell the story of who you are and where you're headed.",
       "images": [
         {
-          "file": "MBP_8781.jpg",
+          "file": "seniors/MBP_8781.jpg",
           "alt": "A young woman in a black dress seated by a white wall outdoors."
         },
         {
-          "file": "MBP_6159.jpg",
+          "file": "seniors/MBP_6159.jpg",
           "alt": "A young woman in a green dress and colorful graduation hood seated on stone steps."
         },
         {
-          "file": "MBP_0358.jpg",
+          "file": "seniors/MBP_0358.jpg",
           "alt": "A smiling young woman seated cross-legged on a path beside a lawn."
         },
         {
-          "file": "MBP_3438.jpg",
+          "file": "seniors/MBP_3438.jpg",
           "alt": "A young man seated in a red vehicle with its door open."
         }
       ]
@@ -74,15 +74,15 @@
       "description": "Family portraits are a chance to pause and enjoy being together. A session can bring everyone into the frame while leaving room for natural interactions, genuine expressions, and the connections that make your family unique.",
       "images": [
         {
-          "file": "MBP_7004.jpg",
+          "file": "family/MBP_7004.jpg",
           "alt": "Two adults with a baby and a young child on the steps of a brick house."
         },
         {
-          "file": "MBP_3815.jpg",
+          "file": "family/MBP_3815.jpg",
           "alt": "Two adults, a young child and a baby together among garden flowers."
         },
         {
-          "file": "MBP_4705.jpg",
+          "file": "family/MBP_4705.jpg",
           "alt": "Two children holding hands among flowers and grass."
         }
       ]
@@ -93,11 +93,11 @@
       "description": "Your little one turned one, and that's quite the accomplishment! Let's put together a fun scene you can share with family and friends.",
       "images": [
         {
-          "file": "MBP_5275.jpg",
+          "file": "first-birthday/MBP_5275.jpg",
           "alt": "A child wearing a party hat reaches for a birthday cake topped with a number one candle."
         },
         {
-          "file": "MBP_2012.jpg",
+          "file": "first-birthday/MBP_2012.jpg",
           "alt": "A child sitting outdoors behind a small birthday cake topped with a number one candle."
         }
       ]
@@ -108,15 +108,15 @@
       "description": "Welcome your newest family member with photographs that preserve this special chapter. Newborn sessions can focus on the little details, quiet connections, and the people who are already part of baby's world.",
       "images": [
         {
-          "file": "MBP_2798.jpg",
+          "file": "newborns/MBP_2798.jpg",
           "alt": "A baby's feet cradled in adults' hands."
         },
         {
-          "file": "MBP_6964.jpg",
+          "file": "newborns/MBP_6964.jpg",
           "alt": "A sleeping newborn between a soft elephant blanket and a sleeping black dog, in black and white."
         },
         {
-          "file": "MBP_4489.jpg",
+          "file": "newborns/MBP_4489.jpg",
           "alt": "A young child kisses a baby resting in a basket among garden flowers."
         }
       ]
@@ -127,15 +127,15 @@
       "description": "A headshot offers a clear, current introduction wherever your work takes you. Create a portrait that feels polished and approachable, and that represents you consistently across professional profiles, websites, and other materials.",
       "images": [
         {
-          "file": "MBP_6160.jpg",
+          "file": "headshots/MBP_6160.jpg",
           "alt": "Two smiling women seated in patterned armchairs in a bright living room."
         },
         {
-          "file": "MBP_7266.jpg",
+          "file": "headshots/MBP_7266.jpg",
           "alt": "A smiling man wearing glasses and a blue jacket outdoors."
         },
         {
-          "file": "MBP_8070.jpg",
+          "file": "headshots/MBP_8070.jpg",
           "alt": "A man in a dark suit and blue shirt standing outdoors."
         }
       ]
@@ -163,7 +163,7 @@
         "intro": "I'm Melissa, a photographer who loves helping people capture the moments, milestones, and connections that make life special. Whether we're celebrating a new arrival, marking a milestone, or bringing the family together, my goal is to create photographs you'll enjoy looking back on for years to come.",
         "servicesLink": "Explore services",
         "contactLink": "Get in touch",
-        "imageFile": "MBP_6553.jpg",
+        "imageFile": "heroes/MBP_6553.jpg",
         "imageAlt": "A toddler in a denim jacket and floral dress plays with a wooden toy tea set on a blanket in a flower garden."
       },
       "intro": {
@@ -184,7 +184,7 @@
       "eyebrow": "Services",
       "title": "Photography for life's milestones and everyday connections.",
       "intro": "From newborn and family photography to senior portraits and professional headshots, I offer sessions designed around the people and moments being photographed.",
-      "imageFile": "MBP_7189.jpg",
+      "imageFile": "heroes/MBP_7189.jpg",
       "imageAlt": "Two children holding blue ice cream while seated on a red bench outdoors.",
       "sectionTitle": "Find the right session",
       "sectionDescription": "Get in touch to ask about a session and find the right option for you."

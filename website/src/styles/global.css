@@ -997,6 +997,10 @@ h1 {
 }
 
 @media (max-width: 760px) {
+	.service-accordion {
+		scroll-margin-top: 1rem;
+	}
+
 	.service-gallery-2,
 	.service-gallery-3 {
 		grid-template-columns: 1fr;

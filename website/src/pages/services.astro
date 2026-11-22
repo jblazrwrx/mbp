@@ -5,7 +5,7 @@ import { Picture } from 'astro:assets';
 import ServiceGallery from '../components/ServiceGallery.astro';
 import content from '../data/content.json';
 
-const images = import.meta.glob<{ default: ImageMetadata }>('../assets/*.{jpg,jpeg,png}', { eager: true });
+const images = import.meta.glob<{ default: ImageMetadata }>('../assets/**/*.{jpg,jpeg,png}', { eager: true });
 const heroImage = images[`../assets/${content.pages.services.imageFile}`]?.default;
 if (!heroImage) throw new Error(`Services hero image not found in src/assets: ${content.pages.services.imageFile}`);
 ---
@@ -55,14 +55,56 @@ if (!heroImage) throw new Error(`Services hero image not found in src/assets: ${
 </SiteLayout>
 
 <script>
+	const accordions = document.querySelectorAll<HTMLDetailsElement>('.service-accordion');
+	const mobile = window.matchMedia('(max-width: 760px)');
+	let scrollRequest = 0;
+
+	const scrollToAccordion = (target: HTMLDetailsElement) => {
+		const request = ++scrollRequest;
+		requestAnimationFrame(() => {
+			requestAnimationFrame(() => {
+				if (request === scrollRequest && target.open) {
+					target.scrollIntoView({ block: 'start' });
+				}
+			});
+		});
+	};
+
+	accordions.forEach((accordion) => {
+		accordion.addEventListener('toggle', () => {
+			if (!accordion.open) return;
+
+			accordions.forEach((other) => {
+				if (other !== accordion) other.open = false;
+			});
+			if (mobile.matches) scrollToAccordion(accordion);
+		});
+	});
+
 	const openFromHash = () => {
 		const target = document.getElementById(decodeURIComponent(location.hash.slice(1)));
 		if (target instanceof HTMLDetailsElement) {
 			target.open = true;
-			target.scrollIntoView({ block: 'start' });
+			if (mobile.matches) {
+				scrollToAccordion(target);
+			} else {
+				target.scrollIntoView({ block: 'start' });
+			}
 		}
 	};
 
 	openFromHash();
 	window.addEventListener('hashchange', openFromHash);
+
+	window.addEventListener('load', () => {
+		if (!mobile.matches) return;
+		const hash = location.hash;
+		const target = document.getElementById(decodeURIComponent(hash.slice(1)));
+		const request = scrollRequest;
+		document.fonts.ready.then(() => {
+			if (request === scrollRequest && location.hash === hash && target instanceof HTMLDetailsElement && target.open) {
+				scrollToAccordion(target);
+			}
+		});
+	});
 </script>
