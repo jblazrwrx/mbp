@@ -45,6 +45,9 @@ if (!heroImage) throw new Error(`Services hero image not found in src/assets: ${
 						<div class="service-panel">
 							<p>{service.description}</p>
 							<ServiceGallery images={service.images} />
+							<a class="text-link service-contact-link" href={content.pages.services.contactLinkUrl}>
+								{content.pages.services.contactLinkLabel.replace('{service}', service.name)}
+							</a>
 						</div>
 					</details>
 				))}

@@ -1,5 +1,8 @@
 ---
+import { Image } from 'astro:assets';
 import content from '../data/content.json';
+import cameraIcon from '../assets/icons/camera-icon.png';
+import cameraIconFlash from '../assets/icons/camera-icon-flash.png';
 
 const currentPath = Astro.url.pathname;
 ---
@@ -10,7 +13,8 @@ const currentPath = Astro.url.pathname;
 			<img class="wordmark-logo" src={content.site.logoSrc} alt={content.site.logoAlt} width="1000" height="502" />
 		</a>
 		<button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label={content.navigation.menuLabel}>
-			<span class="menu-bars" aria-hidden="true"></span>
+			<Image class="menu-icon menu-icon-closed" src={cameraIcon} alt="" width={56} height={56} loading="eager" />
+			<Image class="menu-icon menu-icon-open" src={cameraIconFlash} alt="" width={56} height={56} loading="eager" />
 		</button>
 		<nav id="site-nav" class="site-nav" aria-label={content.navigation.label}>
 			<ul class="nav-links">
