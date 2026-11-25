@@ -591,6 +591,11 @@ h1 {
 		width: 12rem;
 	}
 
+	[data-nav-ready] {
+		position: relative;
+		z-index: 1;
+	}
+
 	.header-inner {
 		min-height: 76px;
 		flex-wrap: wrap;
@@ -617,6 +622,18 @@ h1 {
 	.site-nav {
 		flex-basis: 100%;
 		order: 3;
+	}
+
+	[data-nav-ready] .site-nav {
+		position: absolute;
+		top: 100%;
+		left: 0;
+		right: 0;
+		max-height: calc(100dvh - 76px);
+		overflow-y: auto;
+		padding-inline: var(--page-gutter);
+		border-bottom: 1px solid var(--color-line);
+		background: var(--color-paper);
 	}
 
 	[data-nav-ready]:not([data-nav-open]) .site-nav {
